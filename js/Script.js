@@ -55,7 +55,10 @@ circles.forEach(elem=>{
     const pointsMarked = elem.querySelectorAll(".points");
 
     for (let i = 0; i < percent; i++) {
-        pointsMarked[i].classList.add(".marked");
+        pointsMarked[i].classList.add("marked");
     }
 
 });
+
+
+var mixer = mixitup('.portafolio-gallery');

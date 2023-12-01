@@ -290,8 +290,6 @@ a.btn:hover::before{
 .about .img-about{
     text-align: center;
     position: relative;
-
-
 }
 
 .about .img-about img{
@@ -427,6 +425,8 @@ a.btn:hover::before{
     animation: css 4s;
 }
 
+/*Skills Profecional css ------------------------*/
+
 .profecional{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -456,7 +456,6 @@ a.btn:hover::before{
 .box .text small{
     display: block;
     font-weight: 600;
-
 }
 
 .circle{
@@ -476,10 +475,123 @@ a.btn:hover::before{
     transform: rotate(calc(var(--i) * var(--rot))) translateY( -45px );
 }
 
-.points .marked{
+.marked{
     animation: glow 0.04s linear forwards;
     animation-delay: calc(var(--i) * 0.05s );
 }
+
+
+/*Portafolio css ------------------------*/
+.portafolio{
+    background: var(--secon-bg-color);
+    width: 100%;
+}
+
+.fillter-buttons{
+    margin:  2rem;
+    text-align: center;
+}
+
+.fillter-buttons .btn{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-left: 1.3rem;
+    color: var(--text-color);
+}
+
+.fillter-buttons .btn:hover{
+    color: var(--hover-color);
+}
+
+.portafolio-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px , 2fr));
+    gap: 2rem;
+}
+
+.port-box{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #292e33;
+    display: flex;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    border: 2px solid var(--hover-color);
+    box-shadow: 0 0 0.3rem #12f7ff;
+}
+
+.port-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.port-image img{
+    width: 100%;
+    opacity: .5s;
+    height: 100%;
+    transition: .5s;
+}
+
+.port-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.8), var(--secon-bg-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: .5s;
+    padding: 0 2rem;
+    opacity: 0;
+}
+
+.port-box:hover .port-content{
+    opacity: 1;
+}
+.port-box:hover .port-image img{    
+    transform: scale(1.1);
+}
+
+.port-content h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.port-content p{
+    font-size: .8rem;
+    margin: 5px 0 15px 0;
+}
+
+.port-content a{
+    background: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--hover-color);
+    outline: 2px solid #fff;
+}
+
+.port-content a i{
+    font-size: 1.3rem;
+    color: var(--secon-bg-color);
+}
+
 
 
 
@@ -535,7 +647,7 @@ a.btn:hover::before{
 
 @keyframes glow{
     0%{
-        background: (var(--hover-color));
+        background: (var(--secon-bg-color));
         box-shadow: none;
     }
     100%{

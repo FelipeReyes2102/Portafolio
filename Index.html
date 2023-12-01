@@ -3,15 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="./css/Styles.css">
     <title>Portafolio Website</title>
     <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
-
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="theme-color" content="black">
     
 </head>
 <body>
@@ -23,9 +18,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#Portafolio">Portafolio</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            
+            <li><a href="#portafolio">Portafolio</a></li>
         </ul>
         <div id="menu-icon" class="bx bx-menu"></div>
     </header>
@@ -60,8 +53,8 @@
                 </div>
 
                 <div class="social-icons">
-                    <a href="#"><i class='bx bxl-facebook-square' ></i></a>
-                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100010278315257"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="https://github.com/FelipeReyes2102"><i class='bx bxl-github' ></i></a>
                     <a href="#"><i class='bx bxl-twitter' ></i></a>
                 </div>
                 
@@ -174,6 +167,7 @@
                 </div>
 
             </div>
+
             <div class="skill-right">
                 <h3>Profecional Skills</h3>
                 <div class="profecional">
@@ -187,25 +181,25 @@
                     </div>
     
                     <div class="box">
-                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="circle" data-dots="80" data-percent="80"></div>
                         <div class="text">
-                            <big>90%</big>
+                            <big>80%</big>
                             <small>Creatividad</small>
                         </div>
                     </div>
     
                     <div class="box">
-                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="circle" data-dots="80" data-percent="100"></div>
                         <div class="text">
-                            <big>90%</big>
+                            <big>100%</big>
                             <small>Comunicación</small>
                         </div>
                     </div>
     
                     <div class="box">
-                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="circle" data-dots="80" data-percent="60"></div>
                         <div class="text">
-                            <big>90%</big>
+                            <big>60%</big>
                             <small>Gestion de Trabajos</small>
                         </div>
                     </div>
@@ -215,7 +209,69 @@
         </div>
      </section>
 
+     <!-- Portafolio section -->
+
+     <section id="portafolio" class="portafolio">
+
+        <div class="main-text">
+            <span>Portafolio</span>
+            <h2>Projects</h2>
+        </div>
+        <div class="container">
+
+            <div class="fillter-buttons">
+                <button class="btn" data-filter="all">All</button>
+                <button class="btn" data-filter=".web">Web App</button>
+                <button class="btn" data-filter=".game">Games</button>
+            </div>
+            
+            <div class="portafolio-gallery">
+
+                <div class="port-box mix web">
+                    <div class="port-image">
+                        <img src="./img/Onlypack.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Onlypack</h3>
+                        <p>En esta aplicacion desarrolle un inicio de secion y un reguistro de usuarios en lenguaje PHP, La
+                        idea final de la aplicacion es, que fuera una red social sin restriccion de contenido.
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix web">
+                    <div class="port-image">
+                        <img src="./img/CineVerse.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>CineVerse</h3>
+                        <p>En esta aplicacion desarrolle las interfaces de Front y Back del reguistro de usuarios y inicio
+                        de secion para una aplicacion en la cual se puede recomendar y ver anime. La aplicacion fue desarrollada en android Studio
+                        con el lenguaje Java.
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix game">
+                    <div class="port-image">
+                        <img src="./img/Onlypack.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Onlypack</h3>
+                        <p></p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+     </section>
+
     <script src="./js/app.js"></script>
+    <script src="./js/mixitup.min.js"></script>
     <script src="./js/Script.js"></script>
     
 </body>

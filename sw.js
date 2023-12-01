@@ -1,13 +1,14 @@
-const nombreCache = "PWAIDGS10A";
+const nombreCache = "Portafolio";
 const archivosCache = [
     "/",
     "/index.html",
     "/css/Styles.css",
     "/js/app.js",
     "/js/Script.js",
-    "/Archivos/CV.pdf"
+    "/Archivos/CV.pdf",
+    "/img/CineVerse.jpg",
+    "/img/Onlypack.jpg"
 ]
-
 self.addEventListener("install", e => {
     console.log("El servis worker se instalo", e)
 
