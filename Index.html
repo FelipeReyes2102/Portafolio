@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="./css/Styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Portafolio Website</title>
     <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
     
@@ -19,13 +20,14 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div id="menu-icon" class="bx bx-menu"></div>
     </header>
 
     <!-- Home section -->
     <section id="home" class="home">
-        <div class="home-content">
+        <div class="home-content  scroll-scale">
             <h1>Hello I'm Felipe de Jesús Reyes Reyes</h1>
             <div class="change-text">
                 <h3>And I'm</h3>
@@ -61,7 +63,7 @@
             </div>
         
 
-        <div class="home-image">
+        <div class="home-image scroll-scale">
             <div class="img-box">
                 <img src="./img/17004.png" alt="">
             </div>
@@ -89,7 +91,7 @@
      <!-- About section -->
 
      <section id="about" class="about">
-        <div class="img-about">
+        <div class="img-about scroll-scale">
             <img src="./img/17004.png" alt="">
             <div class="info-about1">
                 <span>0+</span>
@@ -101,7 +103,7 @@
             </div>
         </div>
 
-        <div class="about-content">
+        <div class="about-content scroll-scale">
             <span>Permiteme presentarme</span>
             <h2>Acerca de mi</h2>
 
@@ -122,8 +124,8 @@
             <h2>My Skills</h2>
         </div>
 
-        <div class="skill-main">
-            <div class="skill-left">
+        <div class="skill-main scroll-scale">
+            <div class="skill-left ">
                 <h3>Tecnical Skills</h3>
 
                 <div class="skill-bar">
@@ -219,13 +221,13 @@
         </div>
         <div class="container">
 
-            <div class="fillter-buttons">
+            <div class="fillter-buttons scroll-scale">
                 <button class="btn" data-filter="all">All</button>
                 <button class="btn" data-filter=".web">Web App</button>
                 <button class="btn" data-filter=".game">Games</button>
             </div>
             
-            <div class="portafolio-gallery">
+            <div class="portafolio-gallery scroll-bottom">
 
                 <div class="port-box mix web">
                     <div class="port-image">
@@ -264,10 +266,28 @@
                         <a href="#"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
-
-
             </div>
         </div>
+     </section>
+
+     <!-- Contact section -->
+
+     <section id="contact" class="contact">
+
+        <div class="main-text scroll-scale">
+            <h2>Contactame</h2>
+        </div>
+
+        <form action="#" class="scroll-bottom">
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Correo">
+            <input type="text" placeholder="Numero de telefono">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <div class="btn-box formBtn">
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </div>
+        </form>
+
      </section>
 
     <script src="./js/app.js"></script>
