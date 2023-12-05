@@ -8,7 +8,8 @@ const archivosCache = [
     "/js/mixitup.min.js",
     "/Archivos/CV.pdf",
     "/img/CineVerse.jpg",
-    "/img/Onlypack.jpg"
+    "/img/Onlypack.jpg",
+    "/img/Imagen1.png"
 ]
 self.addEventListener("install", e => {
     console.log("El servis worker se instalo", e)
