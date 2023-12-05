@@ -273,23 +273,25 @@
      <!-- Contact section -->
 
      <section id="contact" class="contact">
-
         <div class="main-text scroll-scale">
             <h2>Contactame</h2>
         </div>
-
-        <form action="#" class="scroll-bottom">
-            <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Correo">
-            <input type="text" placeholder="Numero de telefono">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+    
+        <form id="form" class="scroll-bottom">
+            <input type="text" id="nombre from_name" name="from_name" placeholder="Nombre">
+            <input type="text" id="correo email" name="email" placeholder="Correo">
+            <input type="text" id="telefono" name="telefono" placeholder="Numero de telefono">
+            <textarea id="mensaje message"  name="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
             <div class="btn-box formBtn">
-                <button type="submit" class="btn">Enviar Mensaje</button>
+                <input type="submit" id="button" value="Send Email" class="btn" placeholder="Enviar Mensaje">
             </div>
         </form>
+    </section>
 
-     </section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+<script type="text/javascript"> emailjs.init('bYdv4XBzDTWpO1i0b')</script>
+    <script src="/js/Correo.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/mixitup.min.js"></script>
     <script src="./js/Script.js"></script>
