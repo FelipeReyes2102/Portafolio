@@ -6,6 +6,7 @@ const archivosCache = [
     "/js/app.js",
     "/js/Script.js",
     "/js/mixitup.min.js",
+    "/js/Correo.js",
     "/Archivos/CV.pdf",
     "/img/CineVerse.jpg",
     "/img/Onlypack.jpg",
